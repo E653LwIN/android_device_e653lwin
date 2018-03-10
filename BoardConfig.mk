@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/huawei/y560
+LOCAL_PATH := device/phicomm/e653lwin
 
 # Platform
 TARGET_NO_BOOTLOADER := true
@@ -40,8 +40,8 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
-TARGET_KERNEL_CONFIG := msm8909-y560_defconfig
-TARGET_KERNEL_SOURCE := kernel/huawei/msm8909
+TARGET_KERNEL_CONFIG := msm8909-e653lwin_defconfig
+TARGET_KERNEL_SOURCE := kernel/phicomm/msm8909
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-smd"
@@ -120,7 +120,7 @@ COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += device/huawei/y560/sepolicy
+BOARD_SEPOLICY_DIRS += device/phicomm/e653lwin/sepolicy
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
