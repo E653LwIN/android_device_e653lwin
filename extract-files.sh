@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export VENDOR=huawei
-export DEVICE=y560
+export VENDOR=phicomm
+export DEVICE=e653lwin
 
 ../../../vendor/cm/tools/extract-files.sh $@

@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),y560)
+ifeq ($(TARGET_DEVICE),e653lwin)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
 # Symlinks

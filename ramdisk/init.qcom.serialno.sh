@@ -32,10 +32,10 @@ serialnum=`serialnoread`
 case "$usr_flag" in
     0 | "")
         echo "0123456789ABCDEF" > /sys/class/android_usb/android0/iSerial
-        setprop ro.huawei.serialno `getprop ro.serialno`
+        setprop ro.phicomm.serialno `getprop ro.serialno`
         ;;
     1)
         echo $serialnum > /sys/class/android_usb/android0/iSerial
-        setprop ro.huawei.serialno $serialnum
+        setprop ro.phicomm.serialno $serialnum
         ;;
 esac
